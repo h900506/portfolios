@@ -1,0 +1,22 @@
+MySql 설치
+https://dev.mysql.com/downloads/mysql/
+
+Visual C++ BuildTools 설치
+https://visualstudio.microsoft.com/ko/thank-you-downloading-visual-studio/?sku=BuildTools
+
+가상환경 생성(cmd)
+python -m venv venv
+
+가상환경 실행(cmd)
+venv\Scripts\activate.bat
+
+인터프리터 설정
+보기(view) -> 명령팔레트(Command Palette, ctrl+shift+p)
+-> Python: Select Interpreter 검색 -> Python 3.10.2('venv': venv) 선택
+
+launcher.py 실행
+
+
+
+가상환경 종료(cmd)
+venv\Scripts\deactivate.bat
