@@ -9,7 +9,7 @@ a = Analysis(
   pathex=[],
   binaries=[],
   datas=[
-    ("C:/Users/h9005/AppData/Local/Programs/Python/Python310/Lib/site-packages/eunjeon/", "./eunjeon"),
+    ("C:/Users/%USERNAME%/AppData/Local/Programs/Python/Python310/Lib/site-packages/eunjeon/", "./eunjeon"),
     ("./images/", "./images"),
   ],
   hiddenimports=[],
@@ -54,6 +54,6 @@ exe = EXE(
   target_arch=None,
   codesign_identity=None,
   entitlements_file=None,
-  icon='D:/workspace/AI_2th/00_projects/espresso_win_ui/images/Espresso.ico',
-  version='D:/workspace/AI_2th/00_projects/espresso_win_ui/version.rc'
+  icon='./images/Espresso.ico',
+  version='./version.rc'
 )
