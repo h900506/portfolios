@@ -9,7 +9,7 @@ a = Analysis(
   pathex=[],
   binaries=[],
   datas=[
-    ("C:/Users/%USERNAME%/AppData/Local/Programs/Python/Python310/Lib/site-packages/eunjeon/", "./eunjeon"),
+    ("./venv/Lib/site-packages/eunjeon/", "./eunjeon"),
     ("./images/", "./images"),
   ],
   hiddenimports=[],
