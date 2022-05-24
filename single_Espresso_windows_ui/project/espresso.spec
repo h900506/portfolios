@@ -10,6 +10,7 @@ a = Analysis(
   binaries=[],
   datas=[
     ("./venv/Lib/site-packages/eunjeon/", "./eunjeon"),
+    ("./venv/Lib/site-packages/wordcloud/", "./wordcloud"),
     ("./images/", "./images"),
   ],
   hiddenimports=[],
@@ -31,9 +32,9 @@ pyz = PYZ(
 
 # avoid warning
 for d in a.datas:
-  if '_MeCab.cp310-win_amd64.pyd' in d[0]:
+  if '_MeCab.cp310-win_amd64.pyd' in d[0]\
+  or 'query_integral_image.cp310-win_amd64.pyd' in d[0]:
     a.datas.remove(d)
-    break
 
 exe = EXE(
   pyz,
@@ -42,7 +43,7 @@ exe = EXE(
   a.zipfiles,
   a.datas,  
   [],
-  name='Espresso_1_1_5.exe',
+  name='Espresso.exe',
   debug=False,
   bootloader_ignore_signals=False,
   strip=False,
