@@ -343,7 +343,7 @@ class Espresso(QMainWindow):
     self.set_table()
 
     # 프로그램 정보
-    info_txt = "Espresso WinUI ver 1.1.5\nProgramed by Hugo(h900506@gmail.com)"
+    info_txt = "Espresso WinUI ver 1.1.7\nProgramed by Hugo(h900506@gmail.com)"
     program_info = QLabel(info_txt, self)
     program_info.move(10,511)
     program_info.resize(QSize(400,35))
